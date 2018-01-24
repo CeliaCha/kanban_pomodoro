@@ -1,0 +1,78 @@
+
+body {
+  background-color: lightgrey;
+  font-size: 14px;
+
+  header {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      background-color : white;
+      width: 30%;
+      height: 400px;
+      border: 1px solid black;
+      margin: 10px;
+
+      ul {
+        list-style-type: none;
+        text-align: left;
+        padding-left: 0px;
+      }
+
+      #timebar {
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+
+        #time-passed {
+          background-color: red;
+          width: 0px;
+          height: 30px;
+        }
+      }
+
+      #timer  {
+
+        text-align: center;
+        padding-bottom: 10px;
+
+
+        // span {
+        //   width: 50px;
+        //   height: 20px;
+        //   margin: 5px;
+        //   text-align: center;
+        //   border: 1px solid black;
+        // }
+      }
+    }
+
+    #left-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+     #middle-col {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 20px;
+
+       #clock {
+         background-color: black;
+         color: white;
+         margin-bottom: 50px;
+       }
+    }
+  }
+}

@@ -3,11 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kanban Pomodoro</title>
+	<link rel="stylesheet" href="/dist/css/dragula.css">
 	<link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-	Hello
-	
+	<header>
+		<form id="add-task">
+			<label for="input-task"> New task :</label>
+			<input id="input-task" type="text" placeholder="My Task" value="My Task">
+			<input type="submit" value="Ajouter">
+		</form>
+	</header>
+	<main>
+		<section class="colonne" id="left-col">
+			<div>
+				<ul id="waiting-tasks">
+					<!-- new tasks added here -->
+				</ul>
+			</div>
+			<button id="start-button">Start</button>
+		</section>
+		<section class="colonne" id="middle-col">
+			<div id="clock">
+				<div id="timebar">
+					<div id="time-passed"></div>
+				</div>
+				<div id="timer">
+					<span id="hours">00</span><span>:</span>
+					<span id="minutes">00</span><span>:</span>
+					<span id="seconds">00</span>
+
+				</div>
+			</div>
+			<button id="pause">Pause</button>
+			<button id="end">Finished</button>
+			<p>Current task : <span id="current-task">Placeholder</span></p>
+
+
+		</section>
+		<section class="colonne">
+
+		</section>
+	</main>
+	<script src="dist/js/jquery.min.js"></script>
+	<script src="dist/js/materialize.min.js"></script>
+	<script src='node_modules/dragula/dist/dragula.js'></script>
+	<script src="/dist/js/main.js"></script>
 	<script src="/dist/js/main.js"></script>
 </body>
 </html>
